@@ -1,0 +1,17 @@
+{
+  "name": "cn2pinyin",
+  "version": "1.0.0",
+  "description": "汉语转成拼音",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "test"
+  ],
+  "author": "luis.wang",
+  "home": "https://github.com/S112/cn2pinyin"
+  "license": "ISC"
+}
