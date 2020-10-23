@@ -1,3 +1,8 @@
-module.exports = function (str) {
-  console.log('cn2pinyin start! ', str)
+const py = require('./util')
+const patch = require('./patch')
+
+if (py.isSupported() && patch.shouldPatch(py._genToken)) {
+  py.patchDict(patch)
 }
+
+module.exports = py
