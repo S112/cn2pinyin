@@ -1,6 +1,6 @@
 {
   "name": "cn2pinyin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "汉语转成拼音",
   "main": "src/index.js",
   "scripts": {
