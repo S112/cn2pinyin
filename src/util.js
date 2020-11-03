@@ -145,7 +145,7 @@ function atomToPinyin (str, pos, lowerCase) {
   return obj && obj.target || ''
 }
 
-export {
+module.exports = {
   _genToken,
   isSupported,
   parse,

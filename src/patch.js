@@ -1,4 +1,4 @@
-exports = module.exports = function patcher (DICT) { // Update EXCEPTIONS dict.
+function patcher (DICT) { // Update EXCEPTIONS dict.
   DICT.EXCEPTIONS = {
     '\u55f2': 'DIA', // DIE 嗲
     '\u78a1': 'ZHOU', // DU 碡
@@ -35,7 +35,7 @@ exports = module.exports = function patcher (DICT) { // Update EXCEPTIONS dict.
   DICT.UNIHANS[330] = '\u5078' // TOU: 偷 --> 偸
 }
 
-exports.shouldPatch = function shouldPatch (toToken) {
+function shouldPatch (toToken) {
   if (typeof toToken !== 'function') return false
 
   // Special unihans that get incorrect pinyins.
@@ -57,4 +57,8 @@ exports.shouldPatch = function shouldPatch (toToken) {
     return true
   }
   return false
+}
+module.exports = {
+  patcher,
+  shouldPatch
 }

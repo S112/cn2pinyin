@@ -7,11 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "npm",
-    "node",
-    "test"
+    "cn",
+    "pinyin",
+    "cnpinyin",
+    "cn2pinyin"
   ],
   "author": "luis.wang",
-  "home": "https://github.com/S112/cn2pinyin",
-  "license": "ISC"
+  "homepage": "https://github.com/S112/cn2pinyin",
+  "license": "MIT"
 }
